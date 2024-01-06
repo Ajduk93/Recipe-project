@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
+/* font-family: 'Open Sans',sans-serif;
+font-family: 'Rubik', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+background-color: rgb(0, 0, 0);
+background-image: url(./wooden.jpg);
+padding-top: 50px;
+padding-bottom: 450px;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-weight: 100%
+;
+
+}
+.header-container{
+    width: 100%;
+    justify-content: center;
+}
+.header-list-container{
+    color: rgb(218, 220, 103);
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-inline: auto;
+    font-family: 'Rubik', sans-serif;
+    gap: 6px;
+}
+li{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.header-list{
+    border: solid 1px rgb(218, 220, 103);;
+    border-radius: 30px;
+    background-color: rgba(2, 14, 10, 0.81);
+    backdrop-filter: blur(6px);
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline;
+    overflow: hidden;
+    padding: 10px 20px 10px 20px;
+}
+.header-list a{
+    text-decoration: none;
+    color: rgb(218, 220, 103)
+}
+.header-list:hover{
+
+    background-color: rgba(61, 53, 2, 0.804);
+    transition: 1s;
+}
+.header-list:active{
+
+    background-color: rgb(244, 243, 242);
+
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5%;
+}
+.card-container{
+    width: 65vh;
+    min-width: 35vh;
+    background-color: rgba(7, 7, 7, 0.556);
+    backdrop-filter: blur(6px);
+    margin-inline: auto;
+    text-align: center;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+
+}
+.picture-container{
+    min-height: 25vh;
+    width: 100%;
+    position: relative;
+}
+
+.picture-container label{
+    cursor: pointer; 
+}
+#images-outline{
+        border: black solid 1px;
+        border-radius: 15px;
+        width: 45px;
+        height: 35px;
+        background-color: rgb(218, 220, 103);
+        padding: 3px;
+        margin-bottom: 50px;
+        margin-right: 10px;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+}
+#images-outline:hover{
+    color: rgb(174, 100, 10);
+    background-color: rgb(252, 255, 48);
+    transition: 1s;
+}
+#food-img{
+width: 100%;
+height: auto;
+border-top-right-radius: 40px;
+border-top-left-radius: 40px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+#image-input{
+    display: none;
+}
+.dish-title-container{
+    background-color: rgb(218, 220, 103);
+    height: 10%;
+}
+
+/* Dish title container */
+.dish-title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+#dish-title-input{
+width: 80%;
+border-radius: 10px;
+background-color: black;
+padding-left: 10px;
+font-size: 25px;
+text-align: center;
+color: rgb(218, 220, 103);
+margin-left: 10%;
+display: none;
+}
+
+#dish-title:focus{
+    background-color: rgb(218, 220, 103);
+    color: black;
+    transition: 1s;
+}
+#dish-title-bttn{
+    width: 120px;
+    height: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 10px;
+    font-size: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(218, 220, 103);
+}
+
+#dish-title-bttn:hover{
+    background-color: rgb(201, 198, 21);
+    color: black;
+    transition: 1s;
+}
+
+
+/* Preparation time container */
+
+
+.prep-time-container{
+    color: rgb(218, 220, 103) ;
+    background-color: rgba(5, 3, 1, 0.562);
+    height: 18%;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: solid 3px rgb(218, 220, 103);
+
+}
+.prep-time-container p {
+    font-family: 'Rubik', sans-serif;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.prep-time-container input{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(218, 220, 103);
+}
+#prep-time-input {
+    border-radius: 10px;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+#prep-time-input::-webkit-outer-spin-button,
+#prep-time-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.text-container{
+    text-align: center;
+    height: 75%;
+    display: flex;
+    font-size: 1.6em;
+    border: solid 3px rgb(218, 220, 103) ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top: none;
+}
+.text-container p{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* Ingredients card */
+
+.ingredients-card{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    background-color:rgba(2, 2, 2, 0.617);;
+    width: 50%;
+    height: 100%;
+    min-height: 40vh;
+    padding-top: 10px;
+    color: rgb(218, 220, 103);
+    padding-right: 5px;
+    border-bottom-left-radius: 40px;
+
+}
+.ingredients-card p{
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: rgb(218, 220, 103);
+    z-index: 3;
+}
+
+.ingredients-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.ingredients-card button{
+    background-color: bisque;
+    width: 0px;
+    height: 0px;
+    margin-right: 15%;
+    
+}
+.ingredients-button{
+    margin-top: -16px;
+}
+
+.ingredients-card button:hover{
+    cursor: pointer;
+}
+
+#input-ingredients {
+    font-family: 'Rubik', sans-serif;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    height: 10%;
+    width: 90%;
+    font-size: 17px;
+    border-radius: 15px;
+    background-color: rgb(218, 220, 103) ;
+    border: none;
+
+}
+
+#input-ingredients:focus{
+    outline: none;
+    background-color:rgb(246, 248, 197);
+    transition: 1s;
+}
+
+#ing-list {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+    
+}
+#ing-list li {
+    padding-top: 5px;
+    overflow: hidden;
+
+}
+
+
+/* Preparation card */
+
+.prep-card{
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(2, 2, 2, 0.617);
+    width: 50%;
+    min-height: 40vh;
+    height: 100%;
+    padding-top: 10px;
+    color: rgb(218, 220, 103);
+    border-bottom-right-radius: 40px;
+
+}
+.prep-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.prep-card p {
+    color:rgb(218, 220, 103);
+    margin-bottom: 18px;
+
+}
+.prep-card button{
+    background-color: rgba(2, 2, 2, 0.332);
+    border: none;
+    cursor: pointer;
+    margin-inline: auto;
+}
+
+/* ! Fix this button  */
+
+#prep-submt {
+        color: rgb(205, 229, 21);
+        border: solid 1px rgb(218, 220, 103);
+        width: 50px;
+        height: 20px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-top: 5%;
+    
+}
+
+/* Preparation time section */
+
+.prep-time-icon{
+    position: absolute;
+    bottom: 26%;
+    height: 50%;
+    width: 50%;
+    left: -15%;
+}
+#ing-btn{
+    width: 3svw;
+    height: 3vh;
+    padding:2px 2px 2px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(218, 220, 103);
+    background-color: rgba(2, 2, 2, 0);
+}
+
+#prep-btn{
+width: 3svw;
+height: 3vh;
+padding: 2px 2px 2px 2px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgb(218, 220, 103);
+background-color: rgba(2, 2, 2, 0);
+}
+#input-prep {
+    border: solid black 2px;
+    border-radius: 7%;
+    display: none;
+    overflow: hidden;
+    resize: none;
+}
+
+
+
+
